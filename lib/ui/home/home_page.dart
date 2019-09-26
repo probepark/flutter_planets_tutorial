@@ -6,11 +6,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      body: new Column(
+    return Scaffold(
+      body: Column(
         children: <Widget>[
-          new GradientAppBar("treva"),
-          new HomePageBody(),
+          GradientAppBar("treva"),
+          HomePageBody(),
         ],
       ),
     );
@@ -31,11 +31,11 @@ class GradientAppBar extends StatelessWidget {
       .padding
       .top;
 
-    return new Container(
-      padding: new EdgeInsets.only(top: statusBarHeight),
+    return Container(
+      padding: EdgeInsets.only(top: statusBarHeight),
       height: statusBarHeight + barHeight,
-      child: new Center(
-        child: new Text(title,
+      child: Center(
+        child: Text(title,
           style:const TextStyle(
             color: Colors.white,
             fontFamily: 'Poppins',
@@ -44,8 +44,8 @@ class GradientAppBar extends StatelessWidget {
           ),
         ),
       ),
-      decoration: new BoxDecoration(
-        gradient: new LinearGradient(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
           colors: [
             const Color(0xFF3366FF),
             const Color(0xFF00CCFF)
