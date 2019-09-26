@@ -48,7 +48,7 @@ class PlanetSummary extends StatelessWidget {
         children: <Widget>[
           Container(height: 4.0),
           Text(planet.name, style: Style.titleTextStyle),
-          Container(height: 10.0),
+          Container(height: 9.0),
           Text(planet.location, style: Style.commonTextStyle),
           Separator(),
           Row(

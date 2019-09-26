@@ -16,7 +16,7 @@ class HomePageBody extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 24.0),
               sliver: SliverList(
                 delegate: SliverChildBuilderDelegate(
-                    (context, index) => PlanetSummary(planets[index]),
+                  (context, index) => PlanetSummary(planets[index]),
                   childCount: planets.length,
                 ),
               ),
